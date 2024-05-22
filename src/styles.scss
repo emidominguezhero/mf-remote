@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+	height: 100svh;
+	padding: 1rem;
+	background-color: #222;
+	color: #fff;
+	overflow-y: auto;
+
+	h1 {
+		text-align: center;
+		font-weight: 200;
+	}
+
+	.button {
+		display: block;
+		padding: 0.5rem;
+		margin: 1rem auto;
+		border: none;
+		border-radius: 0.25rem;
+		background-color: #007bff;
+		color: #fff;
+		font-size: 1rem;
+		transition: background-color ease 300ms;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #0056b3;
+		}
+	}
+}
