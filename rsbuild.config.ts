@@ -6,10 +6,13 @@ const port = 3001;
 
 export default defineConfig({
 	server: {
-		port: port
+		port
 	},
 	dev: {
 		assetPrefix: `http://localhost:${port}`
+	},
+	output: {
+		assetPrefix: "https://mf-remote-coral.vercel.app"
 	},
 	tools: {
 		rspack: (config, { appendPlugins }) => {
